@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.random.RandomGenerator;
 
 public class main {
 
@@ -12,9 +13,12 @@ public class main {
         int sizeH = enter.nextInt(); //lines
         int sizeG = enter.nextInt(); //generates
 
-        boolean[][] cell = new boolean[1][0];
+        gameOfLife jogo = new gameOfLife(sizeW, sizeH);
 
+        jogo.Grid();
     }
+
+
 
 
 }
